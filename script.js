@@ -1,18 +1,9 @@
-// Preloader script for the whole page
-window.addEventListener('load', function() {
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    preloader.style.display = 'none';
-  }
-});
-
-// Contact form submission
 document.getElementById("contact-form").addEventListener("submit", async function(e) {
   e.preventDefault(); // Prevent default form submission
 
   const form = this;
   const message = document.getElementById("form-message");
-  message.innerHTML = '<span class="form-spinner"></span> Sending...'; // Spinner while sending
+  message.textContent = "Sending...";
 
   const formData = new FormData(form);
 
