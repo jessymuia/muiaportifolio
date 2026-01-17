@@ -1,238 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Christopher Jessy Muia</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Christopher Jessy Muia - Portfolio</title>
+
+  <!-- PWA Configuration -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ec1839">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="J.Muia Portfolio">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Portfolio of Christopher Jessy Muia - ICT Officer">
+
+  <!-- Icons for PWA -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://i.imgur.com/l4RPuu5.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://i.imgur.com/l4RPuu5.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://i.imgur.com/l4RPuu5.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="https://i.imgur.com/l4RPuu5.png">
+  <link rel="shortcut icon" href="https://i.imgur.com/l4RPuu5.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <img class="profile-pic" src="https://i.imgur.com/1VewVVy.png" alt="Profile Photo">
-    <h1>Christopher Jessy Muia</h1>
-    <div class="title">Aspiring ICT Professional</div>
-    <div class="contact-info">
-      <span>📱 <a href="tel:+254710318560" style="color:#fff;text-decoration:underline;">0710 318 560</a></span>
-      <span>📧 <a href="mailto:jessymuiaa@gmail.com" style="color:#fff;text-decoration:underline;">jessymuiaa@gmail.com</a></span>
-      <span>🏠 P.O. Box 90128-125, Nairobi, Kenya</span>
-      <span>🌍 Kenyan</span>
-    </div>
-  </header>
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        As a dedicated and innovative ICT professional, my career development objective is to leverage my technical expertise and passion for technology to drive transformative solutions that enhance organizational efficiency and security. I aim to continually advance my knowledge and skills in cutting-edge technologies, contribute to impactful projects, and take on leadership roles that allow me to mentor and inspire the next generation of tech enthusiasts.
-      </p>
-      <p>
-        My ultimate goal is to become a recognized expert in the ICT field, known for my problem-solving abilities, strategic thinking, and commitment to excellence.
-      </p>
-    </div>
-  </section>
-  <section>
-    <h2>Career Objective</h2>
-    <p>
-      An aspiring Information Communication Technology professional seeking to leverage strong technical skills, passion for learning, and integrity to contribute effectively to the financial management field. Aiming to grow in a dynamic organization while gaining hands-on experience in accounting practices.
-    </p>
-  </section>
-  <!-- ===============================
-  Work Experience Section Start
-  ===============================
-<section>
-  <h2>Work Experience</h2>
-  <div class="timeline">
-    <div class="timeline-entry">
-      <h3>ZSL (Zoological Society Of London)</h3>
-      <div class="duration">Data Enumerator | 3rd Feb 2025 – 7th Feb 2025</div>
-      <ul>
-        <li>Assisted in collecting and recording data through surveys and interviews, ensuring accuracy and confidentiality.</li>
-        <li>Managed interviews using structured questionnaires and uploaded data to digital platforms.</li>
-        <li>Supported research teams by accurately capturing and reporting information from the field.</li>
-      </ul>
-    </div>
-    <div class="timeline-entry">
-      <h3>Makueni County Assembly</h3>
-      <div class="duration">ICT Attachee | Sept 2022 - Dec 2022, Sept 2023 - Dec 2023</div>
-      <ul>
-        <li>Assisted in solving hardware and software issues.</li>
-        <li>Assisted in the setup, maintenance, and monitoring of networks.</li>
-        <li>Installed and configured computer systems and applications.</li>
-        <li>Maintained ICT inventory and documentation.</li>
-        <li>Provided technical assistance to users and staff.</li>
-        <li>Assisted in updating websites and systems where appropriate.</li>
-      </ul>
+  <!-- Modern Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="loader">
+        <div class="loader-ring"></div>
+      </div>
+      <div class="preloader-logo">
+        <span>J.</span>muia
+      </div>
+      <div class="loading-text">
+        Loading Portfolio
+        <div class="loading-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-- ===============================
-  Work Experience Section End
-  ===============================
--->
-    <section>
-    <h2>Strengths</h2>
-    <ul class="strengths">
-      <li>Problem-Solving Skills.</li>
-      <li>Technical Expertise.</li>
-      <li>Leadership Abilities.</li>
-      <li>Adaptability.</li>
-      <li>Strong Communication Skills.</li>
-      <li>Cybersecurity Awareness.</li>
-      <li>Team Collaboration.</li>
-      <li>Commitment to Excellence.</li>
-      <li>Passion for Innovation.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Achievements</h2>
-    <ul class="achievements">
-      <li>Achievement in Information Security Standard Course</li>
-      <li>Achievement in ICT Network Standard Course</li>
-      <li>Achievements in Systems AND Applications Standard Course</li>
-      <li>Valid Driving License</li>
+
+  <!-- Online Status Indicator -->
+
+
+  <!-- Offline Warning -->
+  <div id="offlineWarning" class="offline-warning">
+    <div class="offline-content">
+      <i class="fas fa-wifi-slash"></i>
+      <h3>No Internet Connection</h3>
+      <p>This app requires an internet connection to work.</p>
+      <p>Please check your connection and try again.</p>
+      <button id="retryConnection" class="btn">
+        <i class="fas fa-sync-alt"></i> Retry Connection
+      </button>
+    </div>
+  </div>
+
+  <!-- Install App Modal -->
+  <!-- Add this right before closing </body> tag -->
+  <!-- Floating Install Button -->
+  <div id="floatingInstallBtn" class="floating-install-btn">
+    <div class="install-icon">
+      <i class="fas fa-download"></i>
+    </div>
+    <div class="install-text">
+      Install App
+    </div>
+    <div class="install-badge" id="installBadge">FREE</div>
+  </div>
+  <!-- Update the Install App Modal section in index.html -->
+  <div id="installModal" class="install-modal">
+    <div class="install-modal-content">
+      <button class="close-modal">&times;</button>
+      <h2><i class="fas fa-mobile-alt"></i> Install Portfolio App</h2>
+
+      <div class="install-options">
+        <!-- Unified Installation Guide -->
+        <div class="install-option active" id="mainGuide">
+          <div class="option-icon">
+            <i class="fas fa-download"></i>
+          </div>
+          <h3>Install on Your Device</h3>
+          <p>Follow these simple steps to install this web app on your device for quick access:</p>
+
+          <div class="device-selector">
+            <button class="device-btn active" data-device="android">
+              <i class="fab fa-android"></i> Android
+            </button>
+            <button class="device-btn" data-device="ios">
+              <i class="fab fa-apple"></i> iPhone/iPad
+            </button>
+            <button class="device-btn" data-device="desktop">
+              <i class="fas fa-desktop"></i> Desktop
+            </button>
+          </div>
+
+          <!-- Android Instructions (Default) -->
+          <div class="device-instructions active" id="androidInstructions">
+            <div class="steps">
+              <div class="step">
+                <span>1</span>
+                <p>Open in <strong>Chrome</strong> or <strong>Edge</strong> browser</p>
+              </div>
+              <div class="step">
+                <span>2</span>
+                <p>Tap the <strong>menu button (⋮)</strong> in top right</p>
+              </div>
+              <div class="step">
+                <span>3</span>
+                <p>Select <strong>"Add to Home screen"</strong></p>
+              </div>
+              <div class="step">
+                <span>4</span>
+                <p>Tap <strong>"Add"</strong> to install</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- iOS Instructions -->
+          <div class="device-instructions" id="iosInstructions">
+            <div class="steps">
+              <div class="step">
+                <span>1</span>
+                <p>Open in <strong>Safari</strong> browser</p>
+              </div>
+              <div class="step">
+                <span>2</span>
+                <p>Tap the <strong>Share button</strong> <i class="fas fa-share-square"></i></p>
+              </div>
+              <div class="step">
+                <span>3</span>
+                <p>Scroll and select <strong>"Add to Home Screen"</strong></p>
+              </div>
+              <div class="step">
+                <span>4</span>
+                <p>Tap <strong>"Add"</strong> in top right</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Instructions -->
+          <div class="device-instructions" id="desktopInstructions">
+            <div class="steps">
+              <div class="step">
+                <span>1</span>
+                <p>Open in <strong>Chrome</strong>, <strong>Edge</strong>, or <strong>Opera</strong></p>
+              </div>
+              <div class="step">
+                <span>2</span>
+                <p>Look for the <strong>install icon</strong> in address bar</p>
+                <div class="install-icon-demo">
+                  <img src="https://i.imgur.com/4jXJvFQ.png" alt="Install icon in browser"
+                    style="max-width: 200px; border-radius: 5px; margin-top: 10px;">
+                </div>
+              </div>
+              <div class="step">
+                <span>3</span>
+                <p>Click <strong>"Install"</strong> when prompted</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="install-actions">
+            <button id="installNowBtn" class="btn install-option-btn">
+              <i class="fas fa-download"></i> Install Now
+            </button>
+            <button id="remindLaterBtn" class="btn secondary-btn">
+              <i class="far fa-clock"></i> Remind Me Later
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="install-benefits">
+        <h4><i class="fas fa-star"></i> App Benefits:</h4>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Quick access from home screen</li>
+          <li><i class="fas fa-check-circle"></i> Works like a native app</li>
+          <li><i class="fas fa-check-circle"></i> No app store required</li>
+          <li><i class="fas fa-check-circle"></i> Always up to date</li>
+          <li><i class="fas fa-check-circle"></i> Works offline</li>
         </ul>
-  </section>
-  <section>
-    <h2>Goals</h2>
-    <ul class="goals">
-      <li>Continuous Learning.</li>
-      <li>Expert Recognition.</li>
-      <li>Project Impact.</li>
-      <li>Networking.</li>
-         </ul>
-  </section>
- <section id="projects" class="section">
-  <div class="container">
-    <h2>Project 1</h2>
-    <div class="project">
-      <img src="https://imgur.com/geJQ8nC.jpg" alt="Project Screenshot" />
-      <h3>Ash cooks</h3>
-      <p>
-       Developed and designed the AshCooks website which  is a modern bakery and confectionery factory dedicated to delivering joy and delight through freshly baked treats. 
-        Link to the website: <a href="https://ashcooks.onrender.com" target="_blank">ashcooks.onrender.com</a>
-      </p>
-    </div>
-    <h2>Project 2</h2>
-    <div class="project">
-      <img src="https://tiptipparty.co.ke/wp-content/uploads/2025/04/tiptip.png" alt="Project Screenshot" />
-      <h3>Tiptipparty</h3>
-      <p>
-        Developed and design the  tiptipparty website. Link to the website: <a href="https://tiptipparty.co.ke" target="_blank">tiptipparty.co.ke</a>
-      </p>
+      </div>
     </div>
   </div>
-</section>
-  <section id="documents" class="section">
-  <div class="container">
-    <h2>Documents</h2>
-   <div class="document-card">
-    <div class="doc-info">
-    <h3>ICT Internship Report 1</h3>
-    <a href="https://drive.google.com/file/d/1X3SNfI_2VQaAghRsvBVwZY-RGBPE8MXT/view?usp=drive_link" target="_blank" class="doc-btn" download>
-      <span>View PDF</span>
-      <!-- External link/download icon -->
-      <svg viewBox="0 0 20 20" fill="none" width="20" height="20" class="external-link-icon">
-        <path d="M7 13l6-6m0 0H9m4-0V9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-</div>
- <div class="document-card">
-    <div class="doc-info">
-    <h3>ICT Internship Report 2</h3>
-    <a href="https://drive.google.com/file/d/1X3x2_5UhRwH_Rz62cb_aIqMnta-BJtzU/view?usp=drive_link" target="_blank" class="doc-btn" download>
-      <span>View PDF</span>
-      <!-- External link/download icon -->
-      <svg viewBox="0 0 20 20" fill="none" width="20" height="20" class="external-link-icon">
-        <path d="M7 13l6-6m0 0H9m4-0V9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-</div>
 
- <div class="document-card">
-    <div class="doc-info">
-    <h3>Curriculum Vitae</h3>
-    <a href="https://drive.google.com/file/d/1qMkKGx3N1Q6nbjuAZRvW3EE5eGyUXAkr/view?usp=drive_link" target="_blank" class="doc-btn" download>
-      <span>View PDF</span>
-      <!-- External link/download icon -->
-      <svg viewBox="0 0 20 20" fill="none" width="20" height="20" class="external-link-icon">
-        <path d="M7 13l6-6m0 0H9m4-0V9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-</div>
-   
-</section>
-<!-- ===============================
-Gallery Section Start
-=============================== -->
-<section id="gallery" class="section">
-  <div class="container">
-    <h2>Gallery</h2>
-    <p>Coming soon!!!!!</p>     
-    <!--
-<div class="gallery-grid">
-    <div class="gallery-item">
-    <img src="img1.jpg" alt="Gallery Image 1" />
-    <div class="caption">Caption for Image 1</div>
-  </div>
-  <div class="gallery-item">
-    <img src="img2.jpg" alt="Gallery Image 2" />
-    <div class="caption">Caption for Image 2</div>
-  </div>
-  <div class="gallery-item">
-    <img src="img3.jpg" alt="Gallery Image 3" />
-    <div class="caption">Caption for Image 3</div>
-  </div>
-  
-</div>
--->
-  </div>
-</section>
+  <div class="main-container">
+    <div class="aside">
+      <div class="logo">
+        <a href="#home"><span>J.</span>muia </a>
+      </div>
 
-   <!-- ===============================
-  Work Experience Section Start
-  ===============================
-<section>
-    <h2>References</h2>
-    <ul class="references">
-      <li>
-        <strong>Mr. Christopher Mwendwa Mwenze</strong><br>
-        ICT Officer, Makueni County Assembly<br>
-        Phone: 0710 340 004<br>
-        Email: <a href="mailto:chrismwendwa9@gmail.com">chrismwendwa9@gmail.com</a>
-      </li>
-    </ul>
-  </section>
-  - ===============================
-  Work Experience Section End
-  ===============================
--->
-    <section>
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>📞 0710318560 | ✉️ jessymuiaa@gmail.com</p>
-<a href="https://wa.me/254710318560" target="_blank" class="whatsapp-link">
-  Chat with me on WhatsApp
-</a>
-</div>
-<br>
- <div class="container">
-  <form id="contact-form" action="https://formspree.io/f/xyzwvkqg" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-  <div id="form-message"></div>
-</div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i>About</a>
+        </li>
+        <li>
+          <a href="#services"><i class="fa fa-list"></i>Services</a>
+        </li>
+        <li>
+          <a href="#pricelist"><i class="fa fa-tags"></i>Price List</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+        </li>
+
+      </ul>
+
 
     </div>
-  </section>
-  <footer>
-    &copy; 2025 Christopher Jessy Muia. All Rights Reserved.
-  </footer>
+
+    <div class="main-content">
+      <section class="home section active" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Hello, my name is <span class="name">Christopher Jessy Muia</span>
+              </h3>
+              <h3 class="profession">
+                I'm a <span class="typing">ICT Officer</span>
+              </h3>
+              <p>
+                I'm an ICT Officer with hands-on experience in hardware and software support,
+                networking, web design, and system maintenance. I have worked in both
+                government and organizational settings, assisting in troubleshooting, ICT
+                inventory management, website updates, and providing technical support to users.
+                My focus is on delivering efficient ICT solutions that enhance productivity and
+                reliability.
+              </p>
+              <a href="https://www.dropbox.com/scl/fi/4jvc5btoyylnjbtum48hy/JESSY-CV_2.pdf?rlkey=wsl4pjo6zbabzrjxxlcksfs92&st=d54tfqcm&dl=0"
+                class="btn" target="_blank">Download CV</a>
+            </div>
+
+            <div class="home-img padd-15">
+              <img src="https://i.imgur.com/AQ4p8aj.jpeg" alt="hero image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About me</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm christopher Jessy Muia and <span>ICT Officer</span></h3>
+                  <p>
+                    An aspiring Information Communication Technology professional with strong
+                    technical skills, passion for learning, and integrity. I specialize in solving
+                    hardware and software issues, web design, graphic design, and ICT systems
+                    management. I aim to contribute effectively in dynamic organizations while
+                    continuously honing my skills through hands-on experience and innovation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birthday: <span>09 June 2001</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age: <span>24</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email: <span>jessymuiaa@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone: <span>+254 710 318560</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City: <span>Nairobi,Kenya</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance: <span>Available</span></p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#contact" class="btn hire-me" data-section-index="1">Hire me!</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 76%"></div>
+                        <div class="skill-percent">76%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%"></div>
+                        <div class="skill-percent">70%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 66%"></div>
+                        <div class="skill-percent">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 96%"></div>
+                        <div class="skill-percent">96%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Wordpress</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 100%"></div>
+                        <div class="skill-percent">100%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2021 - 2024
+                          </h3>
+                          <h4 class="timeline-title">
+                            Diploma in Information Communication Technology
+                          </h4>
+                          <p class="timeline-text">
+                            Sigalagala National Polytechnic (Main Campus).
+                            Studied ICT with focus on networking, system maintenance,
+                            programming, and ICT applications.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2017 - 2020
+                          </h3>
+                          <h4 class="timeline-title">Kenya Certificate of Secondary Education (KCSE)</h4>
+                          <p class="timeline-text">
+                            Joanna Chase High School.
+                            Gained secondary education foundation with emphasis
+                            on sciences, technology, and communication skills.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2012 - 2015
+                          </h3>
+                          <h4 class="timeline-title">Kenya Certificate of Primary Education (KCPE)</h4>
+                          <p class="timeline-text">
+                            Kiambani Day & Boarding Primary School.
+                            Completed primary education, building strong basics
+                            in numeracy, literacy, and problem-solving.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Feb 2025
+                          </h3>
+                          <h4 class="timeline-title">Data Enumerator (Zoological Society of London)</h4>
+                          <p class="timeline-text">
+                            Assisted in collecting and recording data through surveys and interviews,
+                            ensuring accuracy and confidentiality. Conducted structured interviews,
+                            uploaded data to digital platforms, and supported research teams by
+                            accurately capturing and reporting field information.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Sept 2022 - Dec 2022 | Sept 2023 - Dec 2023
+                          </h3>
+                          <h4 class="timeline-title">ICT Attachee (Makueni County Assembly)</h4>
+                          <p class="timeline-text">
+                            Assisted in troubleshooting hardware and software issues,
+                            setup, maintenance, and monitoring of networks, and ICT inventory
+                            management. Installed and configured computer systems and applications,
+                            updated websites and systems, and provided technical assistance to staff.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Services</h2>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-item">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>
+                  I design and develop professional websites using WordPress, ensuring
+                  responsive layouts, user-friendly navigation, and modern design trends.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-network-wired"></i>
+                </div>
+                <h4>Networking & System Maintenance</h4>
+                <p>
+                  I provide installation, setup, and monitoring of computer networks,
+                  system maintenance, and troubleshooting to ensure smooth ICT operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-cogs"></i>
+                </div>
+                <h4>ICT Support</h4>
+                <p>
+                  I offer hardware and software troubleshooting, installation and
+                  configuration of systems, and technical support for individuals and organizations.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-file-alt"></i>
+                </div>
+                <h4>Microsoft Office Solutions</h4>
+                <p>
+                  I am proficient in Microsoft Office (Word, Excel, PowerPoint),
+                  offering services in creating reports, data entry, presentations,
+                  and professional documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW PRICE LIST SECTION -->
+      <section class="price-list section" id="pricelist">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Price List</h2>
+            </div>
+          </div>
+
+          <div class="price-list-container shadow-dark">
+            <!-- Header -->
+            <div class="price-list-header">
+              <h3><i class="fas fa-file-invoice-dollar"></i> ICT SERVICES & PRICE LIST</h3>
+
+            </div>
+
+
+            <!-- Website Design -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-globe"></i> WEBSITE DESIGN & DEVELOPMENT SERVICES</h4>
+
+              <div class="price-item">
+                <h5>1. BASIC WEBSITE PACKAGE</h5>
+                <p class="price">Price: <strong>KES 15,000 – 25,000</strong> (One-time)</p>
+                <p class="includes"><strong>Includes:</strong></p>
+                <ul>
+                  <li>Up to 5 pages</li>
+                  <li>Mobile-friendly design</li>
+                  <li>Contact form</li>
+                  <li>Basic SEO setup</li>
+                </ul>
+              </div>
+
+              <div class="price-item">
+                <h5>2. STANDARD WEBSITE PACKAGE</h5>
+                <p class="price">Price: <strong>KES 30,000 – 45,000</strong> (One-time)</p>
+                <p class="includes"><strong>Includes:</strong></p>
+                <ul>
+                  <li>Up to 10 pages</li>
+                  <li>Custom design</li>
+                  <li>Google Maps & WhatsApp integration</li>
+                  <li>Performance optimization</li>
+                </ul>
+              </div>
+
+              <div class="price-item">
+                <h5>3. ADVANCED WEBSITE PACKAGE</h5>
+                <p class="price">Price: <strong>KES 50,000+</strong> (One-time)</p>
+                <p class="includes"><strong>Includes:</strong></p>
+                <ul>
+                  <li>Unlimited pages</li>
+                  <li>Advanced features</li>
+                  <li>Security hardening</li>
+                  <li>Client training</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- M-Pesa Integration -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-mobile-alt"></i> M-PESA PAYMENT INTEGRATION SERVICES</h4>
+
+              <div class="price-item">
+                <p>• M-Pesa Daraja API integration (STK Push): <strong>KES 10,000 – 20,000</strong></p>
+                <p>• Paybill / Till Number integration: <strong>KES 8,000 – 15,000</strong></p>
+                <p>• Online payment confirmation & callbacks: <strong>KES 5,000 – 10,000</strong></p>
+                <p>• Payment records dashboard setup: <strong>KES 5,000 – 12,000</strong></p>
+                <p>• Testing, deployment & documentation: <strong>Included</strong></p>
+              </div>
+
+              <div class="price-note">
+                <p><strong>Note:</strong> Client must provide approved Safaricom Daraja credentials.</p>
+              </div>
+            </div>
+
+            <!-- Monthly Management -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-calendar-alt"></i> MONTHLY WEBSITE MANAGEMENT</h4>
+
+              <div class="price-item">
+                <p>• Basic Management: <strong>KES 3,000 – 5,000</strong></p>
+                <p>• Standard Management: <strong>KES 7,000 – 12,000</strong></p>
+                <p>• Full Management: <strong>KES 15,000+</strong></p>
+              </div>
+            </div>
+
+            <!-- Computer Repair -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-tools"></i> COMPUTER REPAIR & MAINTENANCE</h4>
+
+              <div class="price-item">
+                <p>• OS installation & upgrades: <strong>KES 1,500 – 3,000</strong></p>
+                <p>• Virus removal & security setup: <strong>KES 1,000 – 2,500</strong></p>
+                <p>• Hardware troubleshooting: <strong>KES 1,000+</strong></p>
+                <p>• Software installation: <strong>KES 500 – 2,000</strong></p>
+              </div>
+            </div>
+
+            <!-- Networking -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-wifi"></i> NETWORKING SERVICES</h4>
+
+              <div class="price-item">
+                <p>• LAN/Wi-Fi setup (small office/home): <strong>KES 5,000 – 15,000</strong></p>
+                <p>• Router configuration & troubleshooting: <strong>KES 2,000 – 5,000</strong></p>
+                <p>• Internet setup (PPPoE, ISP configs): <strong>KES 2,000 – 4,000</strong></p>
+              </div>
+            </div>
+
+
+            <!-- Training -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-chalkboard-teacher"></i> TRAINING & ICT SUPPORT</h4>
+
+              <div class="price-item">
+                <p>• Basic computer training: <strong>KES 1,000 – 2,000 per session</strong></p>
+                <p>• Website & payment system training: <strong>KES 3,000 – 6,000</strong></p>
+                <p>• On-site ICT support (daily rate): <strong>KES 3,000 – 6,000</strong></p>
+              </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="price-list-section important-notes">
+              <h4><i class="fas fa-exclamation-triangle"></i> IMPORTANT NOTES</h4>
+              <ul>
+                <li>Prices may vary depending on scope and complexity.</li>
+                <li>Hardware, hosting, domain, and Safaricom charges are billed separately.</li>
+                <li>All prices are in Kenya Shillings (KES).</li>
+              </ul>
+            </div>
+
+            <!-- Validity -->
+            <div class="price-list-section">
+              <h4><i class="fas fa-calendar-check"></i> VALIDITY</h4>
+              <p>This price list/quotation is valid for 30 days from the date of issue.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Projects</h2>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- Project 1 - Tiptip Political Party Website -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/vWLeRul.png" alt="Tiptip Political Party Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Tiptip Political Party Website</h3>
+                  <p>Custom WordPress website with responsive design and modern UI/UX. Built for Tiptip political party
+                    to enhance their online presence and engage with supporters.</p>
+                  <div class="portfolio-tech">
+                    <span>WordPress</span>
+                    <span>HTML/CSS</span>
+                    <span>PHP</span>
+                    <span>Responsive Design</span>
+                  </div>
+                  <a href="https://tiptipparty.co.ke/" class="btn portfolio-btn" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 - Ashcooks Bakery Website -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/ho3UItu.png" alt="Ashcooks Bakery Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Ashcooks Bakery Website</h3>
+                  <p>Beautiful and functional website for Ashcooks Bakery featuring product showcase, online ordering
+                    system, and customer engagement features.</p>
+                  <div class="portfolio-tech">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+                  <a href="https://ashley-1.onrender.com/" class="btn portfolio-btn" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 - Password Analyzer -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/c0nG29L.png" alt="Password Analyzer" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Password Strength Analyzer</h3>
+                  <p>Interactive web application that analyzes password strength and provides security recommendations
+                    to users.</p>
+                  <div class="portfolio-tech">
+                    <span>JavaScript</span>
+                    <span>HTML/CSS</span>
+                    <span>Security</span>
+                  </div>
+                  <a href="https://cyberpass.netlify.app/" class="btn portfolio-btn" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 - Cyber Security Awareness Website -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/P97IRiJ.png" alt="Cyber Security Awareness Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Cyber Security Awareness Platform</h3>
+                  <p>Group project focused on educating users about cyber security threats and best practices. Served as
+                    Lead Frontend Developer.</p>
+                  <div class="portfolio-tech">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Team Project</span>
+                    <span>Frontend Lead</span>
+                  </div>
+                  <a href="https://campuz-shield.netlify.app/" class="btn portfolio-btn" target="_blank">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 - Jespher Tech Company Website -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/6qKYGLe.png" alt="Jespher Tech Company Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Jespher Tech Company Website</h3>
+                  <p>Developing a modern tech company website with service showcase, portfolio section, and client
+                    engagement features (Work in Progress).</p>
+                  <div class="portfolio-tech">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Modern Design</span>
+                  </div>
+                  <a href="https://jesphertech1.onrender.com/" class="btn portfolio-btn" target="_blank">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 6 - Nzumbi foundation -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/RDEzfad.png" alt="Nzumbi Foundation Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>Nzumbi Foundation Website</h3>
+                  <p>Custom website with responsive design and modern UI/UX. Built for Nzumbi Foundation
+                    to enhance their online presence and engage with supporters.</p>
+                  <div class="portfolio-tech">
+                    <span>Javascript</span>
+                    <span>HTML/CSS</span>
+                    <span>PHP</span>
+                    <span>Responsive Design</span>
+                  </div>
+                  <a href="https://nzumbifoundation.org/" class="btn portfolio-btn" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 6 - React Website -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="https://i.imgur.com/wdYF8D7.png" alt="React Website" />
+                </div>
+                <div class="portfolio-info">
+                  <h3>React Website</h3>
+                  <p>Developing a modern website which can be used to update, edit news and also show news in a
+                    wordpress page</p>
+                  <div class="portfolio-tech">
+                    <span>React</span>
+                  </div>
+                  <a href="https://reacct.netlify.app/" class="btn portfolio-btn" target="_blank">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact</h2>
+            </div>
+          </div>
+
+          <h3 class="contact-title padd-15">Any Question? Contact us!</h3>
+          <h4 class="contact-subtitle padd-15">I'm at your service</h4>
+
+          <div class="row">
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Call us on</h4>
+              <p>+254710318560</p>
+            </div>
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Office</h4>
+              <p>Nairobi</p>
+            </div>
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>jessymuiaa@gmail.com</p>
+            </div>
+          </div>
+
+          <h3 class="contact-title padd-15">
+            Send me an email:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jessymuiaa@gmail.com" target="_blank">
+              jessymuiaa@gmail.com</a>
+          </h3>
+          <h4 class="contact-subtitle padd-15">
+            I'll contact you as soon as possible!
+          </h4>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Dark/Light Toggle Button -->
+  <div class="day-night">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254710318560?text=Hello%20Christopher!%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+    class="whatsapp-float" target="_blank" title="Contact me on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- PWA Install Button (Auto-trigger for Android) -->
+  <button id="pwaInstallBtn" style="display: none;"></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
   <script src="script.js"></script>
+  <script src="pwa-install.js"></script>
+  <script src="price-list.js"></script>
 </body>
+
 </html>
