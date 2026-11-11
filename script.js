@@ -103,3 +103,26 @@ if ('caches' in window) {
 
 /* ===== Footer year ===== */
 document.getElementById('year').textContent = new Date().getFullYear();
+
+
+/* ===== Preloader ===== */
+(function () {
+  const pre = document.getElementById('preloader');
+  if (!pre) return;
+  const started = Date.now();
+  const MIN = 700;       // show for at least this long so it doesn't flash
+  let done = false;
+
+  function hide() {
+    if (done) return;
+    done = true;
+    pre.classList.add('hidden');
+    setTimeout(() => pre.remove(), 600);
+  }
+  function onLoaded() { setTimeout(hide, Math.max(0, MIN - (Date.now() - started))); }
+
+  if (document.readyState === 'complete') onLoaded();
+  else window.addEventListener('load', onLoaded);
+
+  setTimeout(hide, 4000); // never keep visitors waiting on a slow image
+})();
